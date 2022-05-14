@@ -20,5 +20,6 @@ UserTrace's mission is to allow UTaaS (User tracking as a service) to any client
   - Authentication to API will most likely be with the popular library called passport and will be used by clients from their own site or when using UserTrace CMS
 - DynamoDB
   - used for the storage of logs
+  - used for the storage of users
 - S3
   - Potentially the location for storage of user images to be used in generating heatmaps

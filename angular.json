@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "user-trace": "apps/user-trace",
-    "user-trace-e2e": "apps/user-trace-e2e"
+    "user-trace-e2e": "apps/user-trace-e2e",
+    "utas": "apps/utas"
   }
 }
