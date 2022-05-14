@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@user-trace/client/utcm/auth/data-access": [
+        "libs/client/utcm/auth/data-access/src/index.ts"
+      ],
       "@user-trace/server/dynamodb/data-access": [
         "libs/server/dynamodb/data-access/src/index.ts"
       ]

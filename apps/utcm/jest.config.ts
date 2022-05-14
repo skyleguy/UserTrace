@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'user-trace',
+  displayName: 'utcm',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/user-trace',
+  coverageDirectory: '../../coverage/apps/utcm',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

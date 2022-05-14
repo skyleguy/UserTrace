@@ -6,7 +6,7 @@
   "supportFile": "./src/support/index.ts",
   "pluginsFile": false,
   "video": true,
-  "videosFolder": "../../dist/cypress/apps/user-trace-e2e/videos",
-  "screenshotsFolder": "../../dist/cypress/apps/user-trace-e2e/screenshots",
+  "videosFolder": "../../dist/cypress/apps/utcm-e2e/videos",
+  "screenshotsFolder": "../../dist/cypress/apps/utcm-e2e/screenshots",
   "chromeWebSecurity": false
 }

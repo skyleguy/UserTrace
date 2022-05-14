@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/client/utcm/auth/data-access/src",
+  "prefix": "utcm-auth-data-access",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/client/utcm/auth/data-access"],
+      "options": {
+        "jestConfig": "libs/client/utcm/auth/data-access/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/client/utcm/auth/data-access/**/*.ts",
+          "libs/client/utcm/auth/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
