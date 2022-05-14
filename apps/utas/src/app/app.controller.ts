@@ -12,6 +12,12 @@ export class AppController {
   ) {}
 
   @Public()
+  @Get('health')
+  health() {
+    return 'Healthy!';
+  }
+
+  @Public()
   @Post('auth/login')
   async login(@Request() req) {
     return this.authService.login(req.body);

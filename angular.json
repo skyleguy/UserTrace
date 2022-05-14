@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "server-dynamodb-data-access": "libs/server/dynamodb/data-access",
     "user-trace": "apps/user-trace",
     "user-trace-e2e": "apps/user-trace-e2e",
     "utas": "apps/utas"

@@ -1,26 +1,15 @@
 import { Injectable } from '@nestjs/common';
+import { DynamoService } from '@user-trace/server/dynamodb/data-access';
 
 export type User = any;
 
 // TODO: validate users against a call to DynamoDB instead of here
 @Injectable()
 export class UsersService {
-  #nextUserId = 3;
-  private users = [
-    {
-      userId: 1,
-      username: 'john',
-      password: 'changeme',
-    },
-    {
-      userId: 2,
-      username: 'maria',
-      password: 'guess',
-    },
-  ];
+  constructor(private readonly dynamoService: DynamoService) {}
 
   async findOne(username: string): Promise<User | undefined> {
-    return this.users.find((user) => user.username === username);
+    return await this.dynamoService.getUserByUserName(username);
   }
 
   async validateUser(username: string, password: string) {
@@ -29,7 +18,6 @@ export class UsersService {
   }
 
   async addUser(username: string, password: string): Promise<void> {
-    this.users.push({ userId: this.#nextUserId, username, password });
-    return;
+    return this.dynamoService.addUser(username, password);
   }
 }
